@@ -1,0 +1,14 @@
+<p [ngStyle]="{backgroundColor: getColor()}"
+[ngClass]="{online: serverStatus==='online'}">
+Server {{serverId}} is: {{ getServerStatus() }}</p>
+
+<!-- Sq brackets around the ngStyle directive indicate that we are property-binding
+  to a property also named ngStyle...hmm
+
+  Either camelCase or 'background-color', CSS style, in single quotes
+
+  ngClass changes class set in stylesheet or in an inline style in component.ts
+
+  *ngIf, ngStyle, ngClass, *ngFor (see in servers template)
+
+-->

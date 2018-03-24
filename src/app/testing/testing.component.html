@@ -1,0 +1,13 @@
+<!-- This component is for a short project for the online Udemy class -->
+
+<label>Username</label>
+<input type="text" class="form-control" [(ngModel)]='userName'>
+<p>{{ userName }}</p>
+
+<button class="btn btn-primary"
+  [disabled]="userName===''"
+  (click)="onResetUserName()"
+  >Reset User Name
+</button>
+
+<!-- Or to put a simple task inline, (click)="userName = ''"-->

@@ -1,0 +1,17 @@
+<button class="btn btn-primary"
+(click)="onToggle()"
+>Display Details
+</button>
+<p *ngIf="visible">The content of my choice :)</p>
+<p *ngFor="let item of log; let i = index"
+  [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+  [ngClass]="{'white-text' : i >= 4}"
+>Timestamp: {{item}}</p>
+
+<!-- No need for display: hidden to toggle; *ngIf either adds or doesn't add
+  it on its owh. visable is set to false in component, and then flipped on click. 
+
+  By tracking index, we can add the blue class to any type of data we push into
+  the array in component ts
+
+-->

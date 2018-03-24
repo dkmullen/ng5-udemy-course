@@ -1,3 +1,5 @@
+// This app is for a Udemy course, and contains my notes along the way
+
 import { Component } from '@angular/core';
 
 @Component({
